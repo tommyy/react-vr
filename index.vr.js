@@ -19,7 +19,7 @@ export default class react_vr_test extends React.Component {
         let angle = 0;
         return (
         <View>
-            <Pano source={asset('chess-world.jpg')}/>
+            <Pano source={{uri:'/static_assets/chess-world.jpg'}}/>
             {data.map((employee, index) => {
                 const x = CIRCLE_RADIUS * Math.cos(angle);
                 const z = CIRCLE_RADIUS * Math.sin(angle);
